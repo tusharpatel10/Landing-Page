@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     line-height: 1.4;
     font-weight: 200;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
-.section1{
+.section1 {
     background-image: url(./images/65d5bfdfd47c1b5be1847c95_65d02a69bb7642d3cbd99ba9-7b0cc31922f9059b7cb1944ca7987df5.jpeg);
     height: 100vh;
     background-position: center;
@@ -19,7 +19,7 @@ body{
     background-repeat: no-repeat;
 }
 
-.text_content{
+.text_content {
     color: whitesmoke;
     max-width: 900px;
     margin: 0 auto;
@@ -27,7 +27,7 @@ body{
 
 }
 
-.lg_text{
+.lg_text {
     font-size: 70px;
     font-weight: bold;
     display: flex;
@@ -36,12 +36,12 @@ body{
 
 }
 
-span{
+span {
     color: white;
 }
 
 
-.img_content img{
+.img_content img {
     height: 260px;
     width: 260px;
     margin: auto;
@@ -53,20 +53,20 @@ span{
     border-radius: 10px;
 }
 
-.work{
+.work {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     margin: 50px auto;
     max-width: 1100px;
 }
 
-.grid_items{
+.grid_items {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.card{
+.card {
     /* max-height: 320px; */
     height: 500px;
     margin: 10px;
@@ -74,21 +74,97 @@ span{
     box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.2);
 }
 
-.card:hover{
+.card:hover {
     transform: scale(1.04);
     box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.3);
     transition: 0.3s ease-in-out;
     cursor: pointer;
 }
 
-.card_content{
+.card_content {
     margin-top: 15px;
     text-align: center;
 }
 
-.text_lorem{
+.text_lorem {
     text-align: justify;
     margin-left: 12px;
     margin-right: 12px;
 
+}
+
+.footer {
+    display: flex;
+}
+
+.contact {
+    background-color: rgb(37, 85, 5);
+}
+
+.contact a {
+    color: white;
+}
+
+.about {
+    background-color: rgb(158, 6, 6);
+}
+
+.contact,
+.about {
+    min-height: 180px;
+    padding: 32px;
+    color: white;
+    text-align: justify;
+}
+
+.contact p,
+.about p {
+    margin-bottom: 20px;
+}
+
+.contact h2,
+.about h2 {
+    font-size: 54px;
+    font-weight: 300;
+}
+
+.footer {
+    text-align: center;
+    background-color: black;
+    color: wheat;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+@media(max-width:786px) {
+    .section1 {
+        min-height: auto;
+        width: auto;
+        margin: auto;
+        padding: auto;
+
+    }
+
+    .text_content {
+        padding-top: 230px;
+        margin-left: 150px;
+        text-align: center;
+    }
+
+    .lg_text {
+        font-size: 35px;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .contact h2,
+    .about h2 {
+        font-size: 32px;
+    }
 }
